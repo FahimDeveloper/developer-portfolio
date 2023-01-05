@@ -8,17 +8,14 @@ body {
     letter-spacing: 1px;
 }
 
-.container {
-    width: 1140px;
-    margin: auto;
-    height: auto;
+section {
+    padding-top: 100px;
 }
 
-h2 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 61px;
+h1 {
+    font-weight: 700;
+    font-size: 75px;
+    color: #181818;
     text-transform: capitalize;
 }
 
@@ -26,15 +23,99 @@ h2 span {
     color: #FD6E0A;
 }
 
-h3 {
+h2 {
     font-size: 35px;
-    line-height: 48px;
     text-align: center;
     color: #181818;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 18px;
+    color: #757575;
+    line-height: 38px;
+}
+
+article {
+    color: #757575;
+    line-height: 28px;
+}
+
+button,
+input[type="submit"] {
+    letter-spacing: 2px;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+section p {
+    text-align: center;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.container_fluid {
+    width: 1520px;
+    margin-left: auto;
+}
+
+.btn_primary {
+    font-size: 19px;
+    color: white;
+    background-color: #FD6E0A;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+    padding: 19px;
+    cursor: pointer;
+}
+
+.btn_secondary {
+    font-size: 19px;
+    color: #FD6E0A;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    background-color: white;
+    text-transform: capitalize;
+    padding: 19px;
+    cursor: pointer;
+}
+
+.btn_hire,
+.btn_submit {
+    background-color: #FD6E0A;
+    color: white;
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 18px 35px;
+    height: 64px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .header {
     padding-top: 30px;
+    background-color: #FFF8F3;
+    height: 837px;
+    background-image: url("images/header_bg.png"), url("images/developer.png");
+    background-repeat: no-repeat;
+    background-position-x: right, 100px;
+    background-position-y: bottom, center;
+    box-sizing: border-box;
+}
+
+.nav_title {
+    font-size: 45px;
+    font-weight: 800;
+    color: #181818;
 }
 
 .menu {
@@ -57,7 +138,6 @@ h3 {
     text-decoration: none;
     color: #474747;
     font-size: 20px;
-    line-height: 27px;
     text-transform: capitalize;
     padding: 12px 20px;
     position: relative;
@@ -78,15 +158,86 @@ h3 {
     width: 100%;
 }
 
-.btn_hire {
-    background-color: #FD6E0A;
-    border: none;
-    font-size: 20px;
+.sub_title {
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
     text-transform: capitalize;
-    padding: 16px 16px;
+}
+
+.btn_area {
+    margin-top: 30px;
+}
+
+.btn_area button {
+    margin-right: 10px;
+}
+
+.banner_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 66px;
+}
+
+.banner_area,
+.img_area {
+    width: 100%;
+}
+
+.img_area {
+    text-align: right;
+}
+
+.about_me {
+    background-color: #FFF8F3;
+    padding: 130px 150px;
+}
+
+.about_information {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about_information p,
+.about_information strong:not(.exeption) {
+    text-transform: capitalize;
+}
+
+.about_information strong {
+    font-size: 20px;
+}
+
+.what_i_do p {
+    margin-bottom: 30px;
+}
+
+.skill_information {
+    display: flex;
+    gap: 24px;
+}
+
+.col-skill-3 {
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
 }
 
-.btn_hire a {
-    color: white !important;
+.col-skill-3 h4 {
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+.resume_information {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer_area {
+    display: flex;
+    justify-content: space-between;
 }
